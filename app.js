@@ -6,7 +6,7 @@ const express = require('express');
 // === EventStreams modification ===
 // const compression = require('compression');
 // === End EventStreams modification ===
-const bodyParser = require('body-parser');
+let bodyParser = require('body-parser');
 const fs = BBPromise.promisifyAll(require('fs'));
 const sUtil = require('./lib/util');
 const packageInfo = require('./package.json');
